@@ -1,0 +1,109 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#logoDiv {
+    margin-top: 1em;
+    margin-left: -3em;
+}
+ 
+#divContainer {
+    padding: 0;
+    margin-top: 1em;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#titleDiv {  
+  width: 100%;  
+  height: 15%;  
+  margin-left: -2em;
+  line-height: 1em;  
+  text-align: center;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#mainTitle {
+  width: 60%;
+  height: 100%;
+  word-spacing: -2em;
+}
+
+#subTitle {
+  width: 40%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Rubik Mono One';
+  font-size: 5em;
+  letter-spacing: -2px;
+  color: #eead0e;
+}
+
+h3 {
+  font-family: 'Rubik Mono One';
+  color: #eead0e;
+  font-size: 2em;
+}
+
+#logoDiv{
+  height: 100%;
+  width: 10%
+}
+
+#interactDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  margin-right: 1em;
+}
+
+#editorDiv{
+  width: 100%;
+  height: 70%;
+  margin-bottom: 3em;
+}
+
+#legendDiv{
+  width: 100%;
+  height: 25%;
+}
+
+#viewDiv {
+    margin-left: 3px;
+    width: 65%;
+    height: 100%;
+}
+
+
+/* .addRecordBtn {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    background-color: #0079c1;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .addRecordBtn:hover {
+    background-color: #005a87;
+  } */
