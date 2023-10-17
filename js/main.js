@@ -3,38 +3,26 @@ function loadMap(){
             "esri/Map",
             "esri/WebMap",
             "esri/views/MapView",
-            "esri/widgets/Locate",
             "esri/widgets/Search",
             "esri/widgets/Editor",
             "esri/widgets/Legend",
-            "esri/layers/FeatureLayer",
-            "esri/renderers/UniqueValueRenderer",
-            "esri/widgets/ElevationProfile"
+            "esri/layers/FeatureLayer"
           ], 
             
     function(esriConfig, 
             Map, 
             WebMap,
             MapView,
-            Locate,
             Search,
             Editor,
             Legend,
-            FeatureLayer,
-            UniqueValueRenderer,
-            ElevationProfile
+            FeatureLayer
             ) {   
         
       esriConfig.apiKey = "AAPKdd7c255c653b4b2789e0123c1107c197dv1Ropz0dQZOy89fge9jPPo3WaNTVC2kYIVE-3jKjxEPlZIYYXI7-zrRXkKGPB-z"
 
-     
-
-
-      const map = new Map({
-        basemap: "satellite"
-      });
-
-      let webmap = new WebMap({
+      //pull in webmap with running layer and pop-up config
+      const webmap = new WebMap({
         portalItem: {
           id: "9d79b0a89bca4489a1fb233383366d3a"
         }
@@ -67,7 +55,8 @@ function loadMap(){
             layer: runsLayer
           };
 
-    const editor = new Editor({
+    //add editor widget
+      const editor = new Editor({
         view: view,
         layerInfos: [lineInfos],
         container: document.getElementById("editorDiv"),
@@ -76,16 +65,7 @@ function loadMap(){
         }
       });
 
-   
-
-
-      function customGroup(grouping) {
-        // If the layer is 'Police routes', do not group.
-        let groupHeading = "Runing Routes";
-      
-        return groupHeading;
-      }
-
+      //add legend
       const legend = new Legend({
         view: view,
         container: document.getElementById("legendDiv")
@@ -96,7 +76,6 @@ function loadMap(){
         layout: "auto"
       }
       
-    
     }); 
 
 };
